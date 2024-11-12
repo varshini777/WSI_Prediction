@@ -11,7 +11,7 @@ This project provides tools for whole slide image (WSI) analysis and segmentatio
 1. [Color Normalization Step](#color-normalization-step)
 2. [Segmentation Mask Generation](#segmentation-mask-generation)
 3. [Models Used](#models-used)
-4. [Results](#results)
+
 
 ## Color Normalization Step
 
@@ -55,8 +55,3 @@ python generate_mask_from_wsi.py /path/to/wsi_files /path/to/output_masks /path/
 - **U-Net**: A convolutional neural network designed for biomedical image segmentation. It is effective for pixel-wise classification and is used in this project for segmenting tumor, stroma, and TIL regions.
 - **DeepLabV3**: A state-of-the-art deep learning model for semantic image segmentation. DeepLabV3 uses atrous convolution to capture multi-scale context information, which helps in accurate segmentation of regions.
 
-The models are trained on relevant datasets and fine-tuned to handle WSI data effectively. Pre-trained model weights can be used, or you can train your own models if required.
-
-## Results
-
-The output of the segmentation process is a mask image in PNG format for each WSI, which highlights the tumor, stroma, and TIL regions. These masks can be used for further analysis, visualization, or quantitative studies.
